@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#bfe9e0"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="buildingGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#efefef"/>
+      <stop offset="100%" stop-color="#d7e6ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="100%" height="100%" fill="url(#sky)" />
+
+  <!-- distant campus silhouette -->
+  <g transform="translate(0,160) scale(1)">
+    <rect x="60" y="240" width="380" height="220" fill="#e6eef8" rx="8"/>
+    <rect x="460" y="220" width="260" height="260" fill="#cfe6ff" rx="6"/>
+    <rect x="760" y="180" width="360" height="300" fill="#e9f3ff" rx="10"/>
+    <rect x="1160" y="200" width="340" height="280" fill="#dbeafe" rx="6"/>
+
+    <!-- towers/windows -->
+    <g fill="#c3d9ff" opacity="0.9">
+      <rect x="120" y="260" width="40" height="40" rx="4"/>
+      <rect x="180" y="260" width="40" height="40" rx="4"/>
+      <rect x="240" y="260" width="40" height="40" rx="4"/>
+      <rect x="120" y="310" width="160" height="40" rx="4"/>
+    </g>
+  </g>
+
+  <!-- foreground: students and celebration -->
+  <g transform="translate(160,520) scale(1)">
+    <!-- student 1 -->
+    <g>
+      <circle cx="60" cy="-30" r="22" fill="#fff" stroke="#333" stroke-opacity="0.08" />
+      <rect x="40" y="-10" width="40" height="56" rx="8" fill="#ffefc7" />
+      <path d="M48 40 q12 14 24 0" fill="#ffd2a6" />
+    </g>
+    <!-- student 2 with graduation cap -->
+    <g transform="translate(140,0)">
+      <circle cx="60" cy="-30" r="22" fill="#fff" stroke="#333" stroke-opacity="0.08" />
+      <rect x="40" y="-10" width="40" height="56" rx="8" fill="#cfe7ff" />
+      <polygon points="60,-44 40,-58 80,-58" fill="#1e3a8a" />
+    </g>
+    <!-- student 3 dancing -->
+    <g transform="translate(240,8)">
+      <circle cx="36" cy="-30" r="20" fill="#fff" stroke="#333" stroke-opacity="0.08" />
+      <rect x="20" y="-8" width="32" height="52" rx="8" fill="#ffd9e6" />
+    </g>
+
+    <!-- music notes -->
+    <g transform="translate(360,-60)" fill="#1e3a8a">
+      <ellipse cx="16" cy="8" rx="6" ry="8" />
+      <rect x="18" y="-18" width="4" height="34" rx="2" />
+      <ellipse cx="38" cy="-6" rx="6" ry="8" />
+      <rect x="40" y="-32" width="4" height="40" rx="2" />
+    </g>
+
+    <!-- confetti -->
+    <g fill-opacity="0.95">
+      <rect x="90" y="-70" width="6" height="12" fill="#f97316" transform="rotate(18 93 -64)" />
+      <rect x="180" y="-90" width="6" height="12" fill="#06b6d4" transform="rotate(-22 183 -84)" />
+      <rect x="260" y="-60" width="6" height="12" fill="#ef4444" transform="rotate(10 263 -54)" />
+    </g>
+  </g>
+
+  <!-- subtle vignette for readability -->
+  <radialGradient id="vign" cx="50%" cy="45%" r="80%">
+    <stop offset="60%" stop-color="rgba(255,255,255,0)" />
+    <stop offset="100%" stop-color="rgba(0,0,0,0.12)" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vign)" />
+</svg>
